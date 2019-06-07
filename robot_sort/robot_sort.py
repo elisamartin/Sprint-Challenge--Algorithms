@@ -102,7 +102,6 @@ class SortingRobot:
         SortingRobot.set_light_on(self)
         while SortingRobot.light_is_on(self):
             SortingRobot.set_light_off(self)
-            SortingRobot.swap_item(self)
             while SortingRobot.can_move_right(self):
                 SortingRobot.move_right(self)
                 if SortingRobot.compare_item(self) == 1:
